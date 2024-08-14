@@ -43,13 +43,13 @@ function App() {
       <div className=" absolute h-full w-full inset-0 -z-10  bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
 
       <div className="flex flex-col  items-center justify-center h-[75vh] mt-16 w-3/4 mx-auto border-[5px]   rounded-3xl  absolute inset-0 -z-10  bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] ">
-        <h1 className="text-6xl text-[#0f4c5c] font-bold mb-8 font-sans ">
+        <h1 className="md:text-6xl text-3xl text-[#0f4c5c] font-bold mb-8 font-sans ">
           Progress Bar
         </h1>
         <input
           type="text"
-          placeholder="Enter the number between 1 to 149"
-          className="w-1/2 px-2 rounded-xl py-4 text-center bg-blue-50"
+          placeholder="Enter the no. between 1 to 149"
+          className="md:w-1/2 w-3/4  px-2 rounded-xl py-4 text-center bg-blue-50"
           onChange={(e) => {
             setNum(e.target.value);
           }}
@@ -64,7 +64,7 @@ function App() {
             The number should be between 1 to 149
           </div>
         )}
-        <div className="flex space-x-4 mb-8 mt-5">
+        <div className="flex md:flex-row justify-center items-center gap-4 flex-col md:space-x-4 mb-8 mt-5">
           <button
             type="button"
             onClick={() => updateNumber(-1)}
